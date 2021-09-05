@@ -18,17 +18,37 @@ public class Число {
     }
 
     /* Конструкторы */
-    public Число(String целое){
-        this.целое = Integer.parseInt(целое);
-    }
-
     public Число(Число целое){
         Число а = new Число(целое);
         this.целое = а.целоеЧисло();
     }
 
+    public Число(String целое){
+        this.целое = Integer.parseInt(целое);
+    }
+
+    public Число(double целое){
+        this.целое = (int) целое;
+    }
+
+    public Число(float целое){
+        this.целое = (int) целое;
+    }
+
+    public Число(long целое){
+        this.целое = (int) целое;
+    }
+
     public Число(int целое){
         this.целое = целое;
+    }
+
+    public Число(short целое){
+        this.целое = (int) целое;
+    }
+
+    public Число(byte целое){
+        this.целое = (int) целое;
     }
 
     public Число(){
